@@ -4,7 +4,7 @@
 -   run command:
 
 ```bash
-	code front-end && code backend
+code front-end && code backend
 ```
 
 **Use Yarn or Pnpm as your need**
@@ -14,14 +14,14 @@
 -   Open first terminal run:
 
 ```bash
-	npm install
-	npm run watch
+npm install
+npm run watch
 ```
 
 -   Open other terminal and run:
 
 ```bash
-	npm run dev
+npm run dev
 ```
 
 ### Front-end
@@ -29,7 +29,7 @@
 -   Open terminal and run:
 
 ```bash
-	npm install && npm start
+npm install && npm start
 ```
 
 **Create the application then create the pull request.**
