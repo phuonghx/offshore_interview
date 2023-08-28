@@ -12,7 +12,8 @@ datasource db {
 
 model Todo {
     id      Int     @id @default(autoincrement())
-    content String
+    title   String
+    detail  String
     status  Boolean
 }
 
