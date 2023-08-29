@@ -1,7 +1,8 @@
 import { PrismaClient } from "@prisma/client";
 import express from "express";
 import cors from "cors";
-import { healthCheckRouter } from "./routes/healthcheck";
+// import { healthCheckRouter } from "./routes/healthcheck";
+import router from "./routes";
 
 const prisma = new PrismaClient();
 
@@ -15,7 +16,8 @@ async function main() {
     );
 
     // Routes
-    app.use("/healthcheck", healthCheckRouter);
+    // app.use("/healthcheck", healthCheckRouter);
+    app.use(router);
 
     app.listen(process.env.PORT, () => {
         console.log(`Server is up and running at ${process.env.PORT}`);
