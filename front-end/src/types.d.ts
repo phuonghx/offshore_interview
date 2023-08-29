@@ -1,10 +1,20 @@
 interface User {
-    username: string;
-    id: number;
+  username: string;
+  id: number;
 }
 
-interface Todo {
-    content: string;
-    id: number;
-    status: boolean;
+interface ITodo {
+  id?: number;
+  title: string;
+  detail: string;
+  status?: boolean;
 }
+
+interface IModal {
+  message: string;
+  onConfirm: () => void;
+  onCancel: () => void;
+}
+
+
+export type { IModal, ITodo };
